@@ -3,69 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md. Sarman Rana | Portfolio</title>
+    <title>Md. Sarman Rana | UI/UX & Web Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background Glow Effects -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
     <nav class="navbar">
-        <div class="logo">A.K. Sarman</div>
+        <div class="logo">A.K. <span>Sarman</span></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Md. Sarman Rana 👋</h1>
-            <h2>BSc CSE Student | UI/UX Designer | Web Developer</h2>
-            <p>Bridging the gap between exceptional visual design and robust web architecture.</p>
-            <a href="#projects" class="btn">View My Work</a>
+        <div class="hero-content fade-in-up">
+            <div class="badge">BSc in CSE Student & Designer</div>
+            <h1>Crafting <span class="gradient-text">Digital</span> Experiences</h1>
+            <p>Hi, I'm Md. Sarman Rana. I bridge the gap between exceptional visual UI/UX design and robust, scalable web architecture.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I am a Computer Science and Engineering undergraduate with a strong passion for both frontend aesthetics and backend logic. Alongside my studies, I serve as the Class Representative for my cohort and the Event Coordinator for the CEC Club, which has helped me build strong leadership and organizational skills.</p>
-                <p>My technical toolkit includes Python, Kotlin, C#, and web technologies like React and WooCommerce. When I step away from the keyboard, my favorite ways to recharge are traveling, gardening, and catching fish.</p>
+    <section id="skills" class="skills-section">
+        <div class="container marquee">
+            <div class="marquee-content">
+                <span>UI/UX Design</span> • <span>Python</span> • <span>Figma</span> • <span>Kotlin</span> • <span>WooCommerce</span> • <span>C#</span> • <span>Graphic Design</span> • <span>UI/UX Design</span> • <span>Python</span> • <span>Figma</span>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section bg-light">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Leomiii E-Commerce</h3>
-                    <p>A custom WooCommerce integration for a women's apparel brand. Focused on reducing cart abandonment through seamless mobile checkout and modern UI/UX design.</p>
+            <div class="glass-card fade-in-up">
+                <h2 class="section-title" style="margin-bottom: 20px; text-align: left;">About <span class="gradient-text">Me</span></h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 800px;">
+                    I am a Computer Science and Engineering undergraduate with a deep passion for digital product development. I currently serve as the Class Representative for my course and the Event Coordinator for the CEC Club, which has honed my leadership and organizational abilities. 
+                    <br><br>
+                    Beyond the screen and my academic responsibilities, my favorite ways to recharge are traveling, tending to my garden, and catching fish.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Featured <span class="gradient-text">Work</span></h2>
+            <div class="project-grid">
+                
+                <!-- Project 1 -->
+                <div class="glass-card project-card fade-in-up">
+                    <div class="project-content">
+                        <span class="project-tag">UI/UX & Web Dev</span>
+                        <h3>Leomiii E-Commerce</h3>
+                        <p>A custom WooCommerce integration for a modern women's apparel brand specializing in western dresses. Engineered a seamless checkout flow to drastically reduce cart abandonment.</p>
+                        <div class="tech-stack">
+                            <span>WooCommerce</span><span>Figma</span><span>Web Dev</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>M/S Sarman Traders</h3>
-                    <p>Enterprise digital optimization and WooCommerce setup for an agricultural trading business, featuring custom workflows for seed and fertilizer retail operations.</p>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card fade-in-up">
+                    <div class="project-content">
+                        <span class="project-tag">Enterprise Portal</span>
+                        <h3>M/S Sarman Traders</h3>
+                        <p>Digital optimization and comprehensive e-commerce setup for an agricultural trading enterprise based in Chourangi Bazar, Haripur, Thakurgaon. Streamlined seed, fertilizer, and pesticide retail operations.</p>
+                        <div class="tech-stack">
+                            <span>WordPress</span><span>SEO</span><span>Digital Marketing</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Technical Explorations</h3>
-                    <p>Ongoing algorithmic and cybersecurity research utilizing platforms like Codeforces, Kaggle, and OffSec to sharpen backend and security fundamentals.</p>
-                </div>
+
             </div>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <div class="container text-center">
-            <h2 class="section-title">Let's Connect</h2>
-            <p>I am always open to discussing web development, UI/UX design opportunities, or creative collaborations.</p>
-            <a href="mailto:aksarman962@gmail.com" class="btn">aksarman962@gmail.com</a>
+        <div class="container">
+            <div class="glass-card contact-card text-center fade-in-up">
+                <h2>Let's build something <span class="gradient-text">amazing</span></h2>
+                <p>Always open to discussing new web development projects, UI/UX opportunities, or creative collaborations.</p>
+                <a href="mailto:aksarman962@gmail.com" class="btn btn-primary btn-large"><i class="fas fa-envelope"></i> aksarman962@gmail.com</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Md. Sarman Rana. All rights reserved.</p>
+        <p>&copy; 2026 Md. Sarman Rana. Designed & Built with passion.</p>
     </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            const animatedElements = document.querySelectorAll('.fade-in-up');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
