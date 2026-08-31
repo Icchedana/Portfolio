@@ -106,17 +106,18 @@
             </div>
         </div>
     </section>
-
-    <!-- Marketing & Video Section -->
+<!-- Marketing & Video Section -->
     <section id="marketing" class="section">
         <div class="container">
             <h2 class="section-title text-center">Marketing & <span class="gradient-text">Media</span></h2>
-            <div class="project-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+            
+            <!-- Removed the max-width style so multiple cards sit side-by-side -->
+            <div class="project-grid">
                 
+                <!-- Video Card 1 -->
                 <div class="glass-card project-card fade-in-up">
-                    <!-- Responsive Video Wrapper -->
                     <div class="video-wrapper">
-                        <!-- Ensure your video is named 'marketing-video.mp4' and is inside the 'assets' folder -->
+                        <!-- First video source -->
                         <video controls playsinline>
                             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -126,6 +127,22 @@
                         <span class="project-tag"><i class="fas fa-bullhorn"></i> Campaign Strategy</span>
                         <h3>Digital Marketing Focus</h3>
                         <p>A visual breakdown of recent SEO and digital marketing strategies utilized to increase local retail engagement and online brand presence.</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="glass-card project-card fade-in-up">
+                    <div class="video-wrapper">
+                        <!-- Second video source -->
+                        <video controls playsinline>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-content text-center">
+                        <span class="project-tag"><i class="fas fa-chart-line"></i> SEO Optimization</span>
+                        <h3>Brand Growth Strategy</h3>
+                        <p>An overview of the content strategies and analytics tracking used to scale e-commerce traffic and boost conversion rates.</p>
                     </div>
                 </div>
 
