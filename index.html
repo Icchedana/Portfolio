@@ -17,21 +17,32 @@
 
     <nav class="navbar">
         <div class="logo">A.K. <span>Sarman</span></div>
-        <ul class="nav-links">
+        <!-- Mobile Hamburger Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Work</a></li>
+            <li><a href="#projects">Dev & Design</a></li>
+            <li><a href="#marketing">Marketing</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header class="hero">
         <div class="hero-content fade-in-up">
-            <div class="badge">BSc in CSE Student & Designer</div>
+            <!-- Profile Photo Container -->
+            <div class="avatar-container">
+                <!-- Ensure your image is named 'my-photo.jpg' and is inside an 'assets' folder -->
+                <img src="assets/my-photo.jpg" alt="Md. Sarman Rana" class="profile-avatar">
+            </div>
+            
+            <div class="badge">BScin CSE Student & Designer</div>
             <h1>Crafting <span class="gradient-text">Digital</span> Experiences</h1>
-            <p>Hi, I'm Md. Sarman Rana. I bridge the gap between exceptional visual UI/UX design and robust, scalable web architecture.</p>
+            <p>Hi, I'm Md. Sarman Rana. I bridge the gap between exceptional visual UI/UX design, scalable web architecture, and digital marketing strategy.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#marketing" class="btn btn-secondary"><i class="fas fa-play-circle"></i> Watch Media</a>
             </div>
         </div>
     </header>
@@ -39,7 +50,7 @@
     <section id="skills" class="skills-section">
         <div class="container marquee">
             <div class="marquee-content">
-                <span>UI/UX Design</span> • <span>Python</span> • <span>Figma</span> • <span>Kotlin</span> • <span>WooCommerce</span> • <span>C#</span> • <span>Graphic Design</span> • <span>UI/UX Design</span> • <span>Python</span> • <span>Figma</span>
+                <span>UI/UX Design</span> • <span>Digital Marketing</span> • <span>Figma</span> • <span>Python</span> • <span>SEO</span> • <span>WooCommerce</span> • <span>C#</span> • <span>Graphic Design</span> • <span>UI/UX Design</span> • <span>Digital Marketing</span>
             </div>
         </div>
     </section>
@@ -47,8 +58,8 @@
     <section id="about" class="section">
         <div class="container">
             <div class="glass-card fade-in-up">
-                <h2 class="section-title" style="margin-bottom: 20px; text-align: left;">About <span class="gradient-text">Me</span></h2>
-                <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 800px;">
+                <h2 class="section-title mobile-left">About <span class="gradient-text">Me</span></h2>
+                <p class="about-text">
                     I am a Computer Science and Engineering undergraduate with a deep passion for digital product development. I currently serve as the Class Representative for my course and the Event Coordinator for the CEC Club, which has honed my leadership and organizational abilities. 
                     <br><br>
                     Beyond the screen and my academic responsibilities, my favorite ways to recharge are traveling, tending to my garden, and catching fish.
@@ -57,32 +68,57 @@
         </div>
     </section>
 
+    <!-- UI/UX & Dev Projects -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title text-center">Featured <span class="gradient-text">Work</span></h2>
+            <h2 class="section-title text-center">Development & <span class="gradient-text">Design</span></h2>
             <div class="project-grid">
                 
-                <!-- Project 1 -->
                 <div class="glass-card project-card fade-in-up">
                     <div class="project-content">
-                        <span class="project-tag">UI/UX & Web Dev</span>
+                        <span class="project-tag"><i class="fas fa-mobile-alt"></i> UI/UX & Web Dev</span>
                         <h3>Leomiii E-Commerce</h3>
                         <p>A custom WooCommerce integration for a modern women's apparel brand specializing in western dresses. Engineered a seamless checkout flow to drastically reduce cart abandonment.</p>
                         <div class="tech-stack">
-                            <span>WooCommerce</span><span>Figma</span><span>Web Dev</span>
+                            <span>WooCommerce</span><span>Figma</span><span>React</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="glass-card project-card fade-in-up">
                     <div class="project-content">
-                        <span class="project-tag">Enterprise Portal</span>
+                        <span class="project-tag"><i class="fas fa-server"></i> Enterprise Portal</span>
                         <h3>M/S Sarman Traders</h3>
-                        <p>Digital optimization and comprehensive e-commerce setup for an agricultural trading enterprise based in Chourangi Bazar, Haripur, Thakurgaon. Streamlined seed, fertilizer, and pesticide retail operations.</p>
+                        <p>Digital optimization and comprehensive e-commerce setup for an agricultural trading enterprise based in Chourangi Bazar, Haripur. Streamlined seed, fertilizer, and pesticide retail operations.</p>
                         <div class="tech-stack">
-                            <span>WordPress</span><span>SEO</span><span>Digital Marketing</span>
+                            <span>WordPress</span><span>SEO</span><span>E-Commerce</span>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing & Video Section -->
+    <section id="marketing" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Marketing & <span class="gradient-text">Media</span></h2>
+            <div class="project-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                
+                <div class="glass-card project-card fade-in-up">
+                    <!-- Responsive Video Wrapper -->
+                    <div class="video-wrapper">
+                        <!-- Ensure your video is named 'marketing-video.mp4' and is inside the 'assets' folder -->
+                        <video controls playsinline>
+                            <source src="assets/marketing-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-content text-center">
+                        <span class="project-tag"><i class="fas fa-bullhorn"></i> Campaign Strategy</span>
+                        <h3>Digital Marketing Focus</h3>
+                        <p>A visual breakdown of recent SEO and digital marketing strategies utilized to increase local retail engagement and online brand presence.</p>
                     </div>
                 </div>
 
@@ -101,12 +137,37 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Md. Sarman Rana. Designed & Built with passion.</p>
+        <p>&copy; 2026 Md. Sarman Rana. Designed & Built with SARMAN.</p>
     </footer>
 
-    <!-- Scroll Animation Script -->
+    <!-- Interactive Scripts -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Mobile Menu Toggle
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+            const menuIcon = mobileMenu.querySelector('i');
+
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                if (navLinks.classList.contains('active')) {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-times');
+                } else {
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuIcon.classList.remove('fa-times');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+            // Scroll Animation
             const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
