@@ -34,8 +34,8 @@ Welcome to my GitHub portfolio! I specialize in bridging the gap between excepti
 
 ## 📬 Let's Connect
 * **Email:** aksarman962@gmail.com
-* **LinkedIn:** [Your LinkedIn Link]
-* **Behance/Dribbble:** [Your Design Portfolio Link]
+* **LinkedIn:** 
+* **Behance/Dribbble:** 
 
 ---
 *This repository separates functional web source code (`/src`) from high-resolution design exports and case studies (`/assets`), providing a comprehensive view of my full-stack product development lifecycle.*
